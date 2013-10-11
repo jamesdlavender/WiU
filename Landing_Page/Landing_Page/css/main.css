@@ -1,0 +1,220 @@
+
+/* CSS File */
+body{
+	font-size: 12px;
+	font-family: 'Titillium Web', sans-serif;
+	color: #EEEFF7; /*changes color of the whole text*/
+	background-color:#1C1D21;
+	margin-top: 20px;
+}
+#wrapper{
+	width: 990px;
+	margin: 0 auto;
+	padding-left: 1%;
+	padding-right: 1%;
+	-webkit-box-shadow: 0px 0px 10px #000000;
+	-moz-box-shadow:    0px 0px 10px #000000;
+	box-shadow:         0px 0px 10px #000000;
+	height: auto;
+	border-radius: 12px;
+	background-color:#31353D;
+}
+/*-------------------------------------------  header -------------------------------------------------------*/
+
+header{
+	border-bottom: 1px solid #bbb8bf; /*changes color of border under project name*/
+}
+h1{
+	font-size: 28px;
+	color: #92CDCF;
+	margin-top: 0;
+	padding-top: 10px;
+}
+h2{
+	font-size: 20px;
+	color: #92CDCF;
+	margin-top: 20px;
+	background-color: #445878;
+	padding:14px;
+	box-shadow: 0px 0px 5px #181818;
+
+}
+/*-------------------------------------------  table -------------------------------------------------------*/
+table{
+	color: white;
+	background: #f7f7f9;  /*changes color of the background of the table*/
+	border-collapse: collapse;
+	width: 100%;
+	box-shadow: 0px 0px 5px #181818;
+
+}
+tr{
+	color: #ffffff;
+	display: table-row;
+	border-color: inherit;	
+	background-color: #406473;
+}
+.odd{
+	color: #ffffff;
+	background: #476F7F; /*changes color of the stripes table*/
+}
+th{
+	text-align: left;
+	padding: 1em 1em .5em;
+	font-weight: bold;
+	font-size: 120%;
+	color: #fff;  /*changes color of table hd text*/
+	background: #1c1d21; /*changes color of table hd background*/
+}
+th:first-child{
+
+}
+td{
+	font-size: 16px;
+	background-color: 
+	width: 69%;
+}
+td:first-child{
+	
+}
+
+/*-------------------------------------------  top section-------------------------------------------------------*/
+.main{
+
+	overflow: auto;
+	/*border-bottom: 1px solid #bbb8bf;*/
+}
+.main p{
+	width: 67.5%;
+	float: left;
+	font-size: 1.4em;
+
+}
+.main figure{
+	float: right;
+	margin: 15px 0 20px 0;
+	width: 30%;
+
+}
+figure img{
+	width: 100%;
+}
+.sec{
+	clear: both;
+	margin-top: 40px;
+	
+}
+
+/*-------------------------------------------  links -------------------------------------------------------*/
+a{
+	font-family: 'Titillium Web', sans-serif;
+	text-decoration: none;
+	font-size: 1.3em;
+	color: #92CDCF;  /*changes color of the links*/
+}
+a:hover{
+	text-decoration: underline;
+}
+/*-------------------------------------------  footer-------------------------------------------------------*/
+footer{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	width: 90%;
+}
+/* ------------------------------------------- Media Queries -------------------------------------------------------*/
+
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		#wrapper{
+			width:98%;
+		}	
+	}
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+		#wrapper{
+			width:98%;
+
+		}
+		.main figure{
+			width: 35%;
+		}
+		.main figure img{
+			width: 100%;	
+		}
+		.main p{
+			width: 60%;	
+		}
+		td{
+			width: 50%;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#wrapper{
+			width: 95%;
+	
+		}
+		.main, header, h2{
+			padding-left: 1%;
+			padding-right: 1%;
+		}
+		.main figure{
+			width: 100%;
+			float: right;
+		}
+		.main p{
+			width: 98%;
+		}
+		.main figure img{
+			width: 100%;
+		}
+		td{
+			width: 50%;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#wrapper{
+			width: 98%;
+			min-width: 480px;
+			max-width: 767px;
+		}
+		.main p{
+			width: 100%;
+		}
+		td{
+
+			width: 50%;
+		}
+	}
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#wrapper{
+			width: 96%;
+		}
+		figure {
+			display: none;
+		}
+		figcaption{
+			display: none;
+		}
+		.sec{
+			margin-top: 10px;
+		}
+		tr{
+			height: 44px;
+			line-height: 44px;
+		}
+		td{
+			width: 50%;
+			
+		}
+	}
+
+
